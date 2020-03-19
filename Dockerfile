@@ -1,4 +1,5 @@
-FROM rocker/binder:3.5.0
+FROM kmetrics/jbinder:latest
+# FROM kmetrics/jbinder:3.6.2
 
 # Copy your repository contents to the image
 COPY --chown=rstudio:rstudio . ${HOME}
