@@ -1,12 +1,41 @@
-# Specifying an R environment with a runtime.txt file
+binder, Turn a Git repository into a collection of interactive notebooks
+================
 
-Jupyter+R: [![Binder](http://mybinder.org/badge.svg)](http://beta.mybinder.org/v2/gh/binder-examples/rocker/master?filepath=index.ipynb)
+　本リポジトリは [binder example](https://github.com/binder-examples/r)
+からフォークしたものです。フォークしたファイルのライセンスはフォーク元のライセンスにしたがいます。本リポジトリで追加したファイルのライセンスは
+CC 4.0 BY-NC-SA となります。
 
-RStudio: [![Binder](http://mybinder.org/badge.svg)](http://beta.mybinder.org/v2/gh/binder-examples/rocker/master?urlpath=rstudio)
+　
 
+# binder
 
-Both [RStudio](https://www.rstudio.com/) and [IRKernel](https://irkernel.github.io/)
-are installed by default, so you can use either the Jupyter notebook interface or
-the RStudio interface.
+　[binder <i class="fa fa-external-link"></i>](https://mybinder.org/) は
+GitHub のリポジトリから Jupyter Notebook や RStudio Server
+などのコード実行環境を構築できるクラウドサービスです。  
+　binder を利用することで環境構築の手間が省けるだけでなく環境の再現性が確保できるのが大きなメリットです。ただし、構築される環境は
+**ワンタイム** な環境ですので永続的に利用することはできません。
 
-This repository also contains an example of a Shiny app.
+　
+
+## Try binder
+
+　まずは試してみましょう！
+
+[![binder](https://mybinder.org/badge_logo.svg) Try to lunch
+Jupyter](https://mybinder.org/v2/gh/k-metrics/rocker/master?filepath=index.ipynb)
+
+[![binder](https://mybinder.org/badge_logo.svg) Try to lunch RStudio
+Server](https://mybinder.org/v2/gh/k-metrics/rocker/master?urlpath=rstudio)
+
+　
+
+## R/RStduio環境
+
+　本リポジトリでは日本語フォントとロケールが設定された Docker イメージベースで binder
+環境を構築しますので、プロット（図）で日本語が文字化けすることはありません。
+
+　
+
+-----
+
+Enjoy\!
